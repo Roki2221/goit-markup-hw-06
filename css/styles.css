@@ -49,7 +49,6 @@ img {
 /* HEADER */
 .container {
   width: 100%;
-  max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -242,29 +241,41 @@ img {
 }
 
 .advantages {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.advantages-subtitle {
+  color: var(--title-text-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.advantages-item-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .advantages-list {
   display: flex;
-  gap: 24px;
-}
-
-.advantages-list-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 264px;
-  height: 112px;
-  background-color: var(--footer-text-color);
-  position: relative;
-  border-radius: 4px;
-  margin-bottom: 8px;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  column-gap: 24px;
 }
 
 .advantages-list-item {
-  width: calc((100% - 3 * 24px) / 4);
+  width: 100%;
+}
+
+.advantages-list-icon {
+  display: none;
 }
 
 .visually-hidden {
@@ -846,4 +857,60 @@ img {
 
 .link-policy {
   color: var(--logo-blue);
+}
+
+@media screen and (min-width: 428px) {
+  .container {
+    max-width: 426px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 766px;
+  }
+
+  .advantages-list-item {
+    max-width: unset;
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .advantages {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .container {
+    max-width: 1158px;
+  }
+
+  .advantages-list-item {
+    max-width: 100%;
+    width: calc((100% - 3 * 24px) / 4);
+  }
+
+  .advantages-list-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    background-color: var(--footer-text-color);
+    position: relative;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+
+  .advantages-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  .advantages-item-text {
+    font-weight: 400;
+  }
 }
