@@ -293,6 +293,7 @@ img {
 
 .activity {
   padding-bottom: 120px;
+  display: none;
 }
 
 .activity-list {
@@ -306,12 +307,15 @@ img {
 
 .team {
   background-color: var(--footer-text-color);
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .team-list {
   display: flex;
-  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 72px;
 }
 .team-list-item {
   background-color: var(--white-text-color);
@@ -369,16 +373,19 @@ img {
 }
 
 .customers {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .customers-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 16px;
+  row-gap: 72px;
 }
 
 .customers-list-item {
-  width: calc((100% - 120px) / 6);
+  width: calc((100% - 16px) / 2);
   height: 88px;
 }
 
@@ -871,8 +878,14 @@ img {
   }
 
   .advantages-list-item {
-    max-width: unset;
     width: calc((100% - 24px) / 2);
+  }
+
+  .customers-list {
+    column-gap: 24px;
+  }
+  .customers-list-item {
+    width: calc((100% - 24px * 2) / 3);
   }
 }
 
@@ -887,7 +900,6 @@ img {
   }
 
   .advantages-list-item {
-    max-width: 100%;
     width: calc((100% - 3 * 24px) / 4);
   }
 
@@ -912,5 +924,17 @@ img {
 
   .advantages-item-text {
     font-weight: 400;
+  }
+
+  .team {
+    padding: 120px 0;
+  }
+
+  .customers {
+    padding: 120px 0;
+  }
+
+  .customers-list-item {
+    width: calc((100% - 120px) / 6);
   }
 }
