@@ -292,17 +292,7 @@ img {
 }
 
 .activity {
-  padding-bottom: 120px;
   display: none;
-}
-
-.activity-list {
-  display: flex;
-  gap: 24px;
-}
-
-.activity-list-item {
-  width: calc((100% - 48px) / 3);
 }
 
 .team {
@@ -924,6 +914,20 @@ img {
 
   .advantages-item-text {
     font-weight: 400;
+  }
+
+  .activity {
+    padding-bottom: 120px;
+    display: block;
+  }
+
+  .activity-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .activity-list-item {
+    width: calc((100% - 48px) / 3);
   }
 
   .team {
