@@ -1045,18 +1045,29 @@ address {
     }
   }
 
+  .hero-title {
+    margin-bottom: 36px;
+  }
+
   .advantages-list-item {
     width: calc((100% - 24px) / 2);
+  }
+
+  .advantages-subtitle {
+    text-align: start;
   }
 
   .customers-list {
     column-gap: 24px;
   }
   .customers-list-item {
-    width: calc((100% - 24px * 2) / 3);
+    width: 168px;
   }
 
   .footer-container {
+    padding-left: 108px;
+    padding-right: 108px;
+
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
@@ -1201,6 +1212,8 @@ address {
   }
 
   .footer-container {
+    padding-left: 0;
+    padding-right: 0;
     flex-wrap: nowrap;
     gap: 0;
   }
